@@ -1,95 +1,343 @@
+<!doctype html>
 
- <!DOCTYPE HTML>
-<html lang="ZH">
-<head>
-  <meta charset="UTF-8">
+
+
   
-    <title>hexo+github建站 | 王徐杰的博客</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
     
-    <meta name="author" content="XuJie Wang">
     
-    <meta name="description" content="准备工作
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="教程," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="准备工作
 初步准备 安装git  下载地址：git下载 由于熟悉了linux开发环境,在windows系统中安装了完整版cmder(内置git)
 github上创建账号    
 github注册账号  
 建立repository     
-建立仓库名必须是XXX.github.io可以参考wangx">
-    
-    
-    
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
-    
-    <link rel="stylesheet" href="/css/style.css">
+建立仓库名必须是XXX.github.io可以参考wangxujie.github.io
+
+
+
+
+
+使用hexo1.安装node.js  
+
+下载地址： 下载n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github建站">
+<meta property="og:url" content="http://yoursite.com/2016/05/11/hexo-github建站/index.html">
+<meta property="og:site_name" content="王徐杰的博客">
+<meta property="og:description" content="准备工作
+初步准备 安装git  下载地址：git下载 由于熟悉了linux开发环境,在windows系统中安装了完整版cmder(内置git)
+github上创建账号    
+github注册账号  
+建立repository     
+建立仓库名必须是XXX.github.io可以参考wangxujie.github.io
+
+
+
+
+
+使用hexo1.安装node.js  
+
+下载地址： 下载n">
+<meta property="og:updated_time" content="2016-05-13T00:36:32.484Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo+github建站">
+<meta name="twitter:description" content="准备工作
+初步准备 安装git  下载地址：git下载 由于熟悉了linux开发环境,在windows系统中安装了完整版cmder(内置git)
+github上创建账号    
+github注册账号  
+建立repository     
+建立仓库名必须是XXX.github.io可以参考wangxujie.github.io
+
+
+
+
+
+使用hexo1.安装node.js  
+
+下载地址： 下载n">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> hexo+github建站 | 王徐杰的博客 </title>
 </head>
 
-  <body>
-    <header>
-      <div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/img/logo.svg" alt="王徐杰的博客" title="王徐杰的博客"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="王徐杰的博客">王徐杰的博客</a></h1>
-				<h2 class="blog-motto">每一个不曾起舞的日子都是对生命的辜负。</h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					
-						<li><a href="/">Home</a></li>
-					
-						<li><a href="/archives">Archives</a></li>
-					
-					<li>
-					
-					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
-					</form>
-					
-					</li>
-				</ul>
-			</nav>			
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">王徐杰的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">每一个不曾起舞的日子都是对生命的辜负。</p>
 </div>
 
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
     </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
     
-      <a href="/2016/05/11/hexo-github建站/" title="hexo+github建站" itemprop="url">hexo+github建站</a>
-  </h1>
-  <p class="article-author">By
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
     
-      <a href="http://yoursite.com" title="XuJie Wang">XuJie Wang</a>
-    </p>
-  <p class="article-time">
-    <time datetime="2016-05-11T15:48:55.176Z" itemprop="datePublished">2016-05-11</time>
-    Updated:<time datetime="2016-05-13T00:36:32.484Z" itemprop="dateModified">2016-05-13</time>
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                hexo+github建站
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-11T23:48:55+08:00" content="2016-05-11">
+              2016-05-11
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/11/hexo-github建站/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/11/hexo-github建站/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
     
-  </p>
-</header>
-	<div class="article-content">
-		
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用hexo"><span class="toc-number">2.</span> <span class="toc-text">使用hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建自己的新博客"><span class="toc-number">3.</span> <span class="toc-text">创建自己的新博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑文章"><span class="toc-number">4.</span> <span class="toc-text">编辑文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到Github"><span class="toc-number">5.</span> <span class="toc-text">部署到Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署成功"><span class="toc-number">6.</span> <span class="toc-text">部署成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">7.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">8.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优化Hexo"><span class="toc-number">9.</span> <span class="toc-text">优化Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加“Fork-me-on-Github”-ribbon"><span class="toc-number">9.1.</span> <span class="toc-text">添加“Fork me on Github” ribbon</span></a></li></ol></li></ol>
-		</div>
-		
-		<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
 <li><code>初步准备</code><br> 安装git  下载地址：<a href="http://msysgit.github.io/" target="_blank" rel="external">git下载</a><br> 由于熟悉了linux开发环境,在windows系统中安装了完整版<a href="http://pan.baidu.com/s/1i5DASvz" target="_blank" rel="external">cmder</a>(内置git)</li>
 <li><code>github上创建账号</code>    <ul>
 <li><a href="https://github.com/" target="_blank" rel="external">github</a>注册账号  </li>
@@ -161,233 +409,310 @@ hexo d
 <h2 id="优化Hexo"><a href="#优化Hexo" class="headerlink" title="优化Hexo"></a>优化Hexo</h2><h3 id="添加“Fork-me-on-Github”-ribbon"><a href="#添加“Fork-me-on-Github”-ribbon" class="headerlink" title="添加“Fork me on Github” ribbon"></a>添加“Fork me on Github” ribbon</h3><p>给blog主页添加一个“Fork me on Github”的绶带（ribbon，比如选择了红色的ribbon，将相应代码复制到Hexo正在使用的theme下layout.ejs中</p>
 <p>样式选择 <a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="external">https://github.com/blog/273-github-ribbons</a></p>
 <p>粘贴到 themes\当前使用主题\layout\layout.ejs中，放置在 最后，标签<code>&lt;/body&gt;</code>之前即可。</p>
-  
-	</div>
-		<footer class="article-footer clearfix">
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/教程/">教程</a>
-  </div>
-
-
-
-
-<div class="article-share" id="share">
-
-  
-<div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a class="jiathis_button_twitter">Twitter</a>
-    <a class="jiathis_button_evernote">EverNote</a>
-    <a href="http://www.jiathis.com/share?uid=1501277" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-</div>
-<script type="text/javascript" >
-    var jiathis_config={
-    data_track_clickback:true,
-    sm:"copy,renren,cqq",
-    pic:"",
-    summary:"",
-    
-  </script> 
-<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
-" charset="utf-8"></script>      
-
-
-</div>
-</footer>   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2016/05/19/android-6-0-Changes/" title="android 6.0 Changes">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  android 6.0 Changes</span>
-</a>
-</div>
-
-
-<div class="next">
-<a href="/2016/05/11/hello-world/"  title="Hello World">
- <strong>NEXT:</strong><br/> 
- <span>Hello World
-</span>
-</a>
-</div>
-
-</nav>
-
-	
-<section class="comment">
-	<div class="ds-thread"></div>
-</section>
-
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用hexo"><span class="toc-number">2.</span> <span class="toc-text">使用hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建自己的新博客"><span class="toc-number">3.</span> <span class="toc-text">创建自己的新博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑文章"><span class="toc-number">4.</span> <span class="toc-text">编辑文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到Github"><span class="toc-number">5.</span> <span class="toc-text">部署到Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署成功"><span class="toc-number">6.</span> <span class="toc-text">部署成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">7.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">8.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优化Hexo"><span class="toc-number">9.</span> <span class="toc-text">优化Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加“Fork-me-on-Github”-ribbon"><span class="toc-number">9.1.</span> <span class="toc-text">添加“Fork me on Github” ribbon</span></a></li></ol></li></ol>
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-
-  
-
-  
-<div class="tagslist">
-	<p class="asidetitle">Tags</p>
-		<ul class="clearfix">
-		
-			<li><a href="/tags/教程/" title="教程">教程<sup>1</sup></a></li>
-		
-			<li><a href="/tags/文章/" title="文章">文章<sup>1</sup></a></li>
-		
-		</ul>
-</div>
-
-
-  <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<div class="social-font clearfix">
-		
-		
-		
-		
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
-		
-		<a href="http://yoursite.com" target="_blank" title="XuJie Wang">XuJie Wang</a>
-		
-		</p>
-</div>
-</footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
       
-      $('#toc.toc-aside').css('display', 'none');
+    </div>
+
+    <div>
+      
         
-    }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-});
-</script>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/教程/" rel="tag">#教程</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/11/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/19/android-6-0-Changes/" rel="prev" title="android 6.0 Changes">
+                android 6.0 Changes <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/11/hexo-github建站/"
+           data-title="hexo+github建站" data-url="http://yoursite.com/2016/05/11/hexo-github建站/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/author.jpg"
+               alt="XuJie Wang" />
+          <p class="site-author-name" itemprop="name">XuJie Wang</p>
+          <p class="site-description motion-element" itemprop="description">虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用hexo"><span class="nav-number">2.</span> <span class="nav-text">使用hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建自己的新博客"><span class="nav-number">3.</span> <span class="nav-text">创建自己的新博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑文章"><span class="nav-number">4.</span> <span class="nav-text">编辑文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署到Github"><span class="nav-number">5.</span> <span class="nav-text">部署到Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署成功"><span class="nav-number">6.</span> <span class="nav-text">部署成功</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题下载"><span class="nav-number">7.</span> <span class="nav-text">主题下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">8.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化Hexo"><span class="nav-number">9.</span> <span class="nav-text">优化Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加“Fork-me-on-Github”-ribbon"><span class="nav-number">9.1.</span> <span class="nav-text">添加“Fork me on Github” ribbon</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">XuJie Wang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
 
 <script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      h  = $('article h2')
-      ah = $('article h2'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  if(ah.length==0){
-    t.css('display','none');
-  }else{
-    c.click(function(){
-      ta.css('display', 'block').addClass('fadeIn');
-    });
-    o.click(function(){
-      ta.css('display', 'none');
-    });
-    $(window).scroll(function(){
-      ta.css("top",Math.max(140,320-$(this).scrollTop()));
-    });
-  };
-});
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
 
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"wangxujie"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script> 
 
 
 
 
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'null', 'null');  
-ga('send', 'pageview');
-</script>
 
 
-  </body>
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"wangxujie"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
 </html>
