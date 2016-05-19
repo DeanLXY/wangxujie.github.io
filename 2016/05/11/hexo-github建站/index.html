@@ -41,7 +41,7 @@ github注册账号
 				<h1 class="site-name"><a href="/" title="王徐杰的博客">王徐杰的博客</a></h1>
 				<h2 class="blog-motto">每一个不曾起舞的日子都是对生命的辜负。</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -54,7 +54,7 @@ github注册账号
 					
 					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+						<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
 					</form>
 					
 					</li>
@@ -77,7 +77,7 @@ github注册账号
     </p>
   <p class="article-time">
     <time datetime="2016-05-11T15:48:55.176Z" itemprop="datePublished">2016-05-11</time>
-    Updated:<time datetime="2016-05-12T15:45:12.706Z" itemprop="dateModified">2016-05-12</time>
+    更新日期:<time datetime="2016-05-13T00:36:32.484Z" itemprop="dateModified">2016-05-13</time>
     
   </p>
 </header>
@@ -85,7 +85,7 @@ github注册账号
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用hexo"><span class="toc-number">2.</span> <span class="toc-text">使用hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建自己的新博客"><span class="toc-number">3.</span> <span class="toc-text">创建自己的新博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑文章"><span class="toc-number">4.</span> <span class="toc-text">编辑文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到Github"><span class="toc-number">5.</span> <span class="toc-text">部署到Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署成功"><span class="toc-number">6.</span> <span class="toc-text">部署成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">7.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">8.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优化Hexo"><span class="toc-number">9.</span> <span class="toc-text">优化Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加“Fork-me-on-Github”-ribbon"><span class="toc-number">9.1.</span> <span class="toc-text">添加“Fork me on Github” ribbon</span></a></li></ol></li></ol>
 		</div>
 		
@@ -160,7 +160,7 @@ hexo d
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>md文件发布问题<br>在md文件中写中文，发布后会出现乱码的情况，另存为时改为“UTF-8”即可。</p>
 <h2 id="优化Hexo"><a href="#优化Hexo" class="headerlink" title="优化Hexo"></a>优化Hexo</h2><h3 id="添加“Fork-me-on-Github”-ribbon"><a href="#添加“Fork-me-on-Github”-ribbon" class="headerlink" title="添加“Fork me on Github” ribbon"></a>添加“Fork me on Github” ribbon</h3><p>给blog主页添加一个“Fork me on Github”的绶带（ribbon，比如选择了红色的ribbon，将相应代码复制到Hexo正在使用的theme下layout.ejs中</p>
 <p>样式选择 <a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="external">https://github.com/blog/273-github-ribbons</a></p>
-<p>粘贴到 themes\当前使用主题\layout\layout.ejs中，放置在 最后，标签之前即可。</p>
+<p>粘贴到 themes\当前使用主题\layout\layout.ejs中，放置在 最后，标签<code>&lt;/body&gt;</code>之前即可。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -202,6 +202,14 @@ hexo d
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2016/05/19/android-6-0-Changes/" title="android 6.0 Changes">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  android 6.0 Changes</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2016/05/11/hello-world/"  title="Hello World">
@@ -219,32 +227,34 @@ hexo d
 </section>
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用hexo"><span class="toc-number">2.</span> <span class="toc-text">使用hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建自己的新博客"><span class="toc-number">3.</span> <span class="toc-text">创建自己的新博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑文章"><span class="toc-number">4.</span> <span class="toc-text">编辑文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到Github"><span class="toc-number">5.</span> <span class="toc-text">部署到Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署成功"><span class="toc-number">6.</span> <span class="toc-text">部署成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题下载"><span class="toc-number">7.</span> <span class="toc-text">主题下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">8.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优化Hexo"><span class="toc-number">9.</span> <span class="toc-text">优化Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加“Fork-me-on-Github”-ribbon"><span class="toc-number">9.1.</span> <span class="toc-text">添加“Fork me on Github” ribbon</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			<li><a href="/tags/教程/" title="教程">教程<sup>1</sup></a></li>
+		
+			<li><a href="/tags/文章/" title="文章">文章<sup>1</sup></a></li>
 		
 		</ul>
 </div>
 
 
   <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
