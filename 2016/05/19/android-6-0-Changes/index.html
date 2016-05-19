@@ -74,7 +74,7 @@
     </p>
   <p class="article-time">
     <time datetime="2016-05-19T13:49:22.000Z" itemprop="datePublished">2016-05-19</time>
-    Updated:<time datetime="2016-05-19T14:25:07.590Z" itemprop="dateModified">2016-05-19</time>
+    Updated:<time datetime="2016-05-19T14:28:03.850Z" itemprop="dateModified">2016-05-19</time>
     
   </p>
 </header>
@@ -97,9 +97,10 @@
 <p>移除了联网使用的HttpClient</p>
 </blockquote>
 <p>Android 6.0版本移除了Apache Http Client。如果你的应用程序使用此客户端和目标Android 2.3(API级别9)或更高,使用HttpURLConnection类。这个API是更有效的,因为它通过透明的压缩和响应缓存,减少网络使用和减少能耗。继续使用Apache HTTP api,您必须首先声明以下yourbuild.gradle文件中编译时依赖项:</p>
-<pre><code>android {
-useLibrary &apos;org.apache.http.legacy&apos;
-}
+<pre><code>` android {
+     useLibrary &apos;org.apache.http.legacy&apos;
+ }
+ `
 </code></pre><h2 id="Notifications"><a href="#Notifications" class="headerlink" title="Notifications"></a>Notifications</h2><blockquote>
 <p>通知栏方法的删除&amp;修改</p>
 </blockquote>
