@@ -11,9 +11,10 @@
     
     <meta name="description" content="Runtime Permissions
 运行时权限
+  这个版本引入了一个新的权限模型,用户现在可以在运行时直接管理应用程序的权限。这个模型提供了改进的可见性和控制用户权限,同时简化安装和自动升级过程对于应用程序开发人员。用户可以授予或撤销权限单独安装的应用程序。
 
-这个版本引入了一个新的权限模型,用户现在可以在运行时直接管理应用程序的权限。这个模型提供了改进的可见性和控制用户权限,同时简化安装和自动升级过程对于应用程序开发人员。用户可以授予或撤销权限单独安装的应用程序。
-在你的应用程序的目标Android ">
+
+在你的应用程序的目标Andro">
     
     
     
@@ -40,7 +41,7 @@
 				<h1 class="site-name"><a href="/" title="王徐杰的博客">王徐杰的博客</a></h1>
 				<h2 class="blog-motto">每一个不曾起舞的日子都是对生命的辜负。</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -53,7 +54,7 @@
 					
 					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+						<input type="text" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
 					</form>
 					
 					</li>
@@ -76,7 +77,7 @@
     </p>
   <p class="article-time">
     <time datetime="2016-05-19T13:49:22.000Z" itemprop="datePublished">2016-05-19</time>
-    更新日期:<time datetime="2016-05-19T14:16:57.451Z" itemprop="dateModified">2016-05-19</time>
+    Updated:<time datetime="2016-05-19T14:21:47.422Z" itemprop="dateModified">2016-05-19</time>
     
   </p>
 </header>
@@ -84,55 +85,62 @@
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
+			<strong class="toc-title">Contents</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Runtime-Permissions"><span class="toc-number">1.</span> <span class="toc-text">Runtime Permissions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apache-HTTP-Client-Removal"><span class="toc-number">2.</span> <span class="toc-text">Apache HTTP Client Removal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notifications"><span class="toc-number">3.</span> <span class="toc-text">Notifications</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AudioManager-Change"><span class="toc-number">4.</span> <span class="toc-text">AudioManager Change</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Text-Selection"><span class="toc-number">5.</span> <span class="toc-text">Text Selection</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-Keystore-Changes"><span class="toc-number">6.</span> <span class="toc-text">Android Keystore Changes</span></a></li></ol>
 		</div>
 		
-		<h2 id="Runtime-Permissions"><a href="#Runtime-Permissions" class="headerlink" title="Runtime Permissions"></a>Runtime Permissions</h2><blockquote>
-<p>运行时权限</p>
-</blockquote>
-<p>这个版本引入了一个新的权限模型,用户现在可以在运行时直接管理应用程序的权限。这个模型提供了改进的可见性和控制用户权限,同时简化安装和自动升级过程对于应用程序开发人员。用户可以授予或撤销权限单独安装的应用程序。</p>
-<p>在你的应用程序的目标Android 6.0(API级别23)或更高,确保在运行时检查和请求权限。来确定应用程序已经被授予权限,调用newcheckSelfPermission()方法。请求权限,调用新的requestPermissions()方法。即使你的应用程序并不是针对Android 6.0(API级别23),你应该测试你的应用在新的权限模型。</p>
-<ul>
-<li>有关支持新的权限模型在你的应用程序<br>  <a href="https://developer.android.com/training/permissions/index.html" target="_blank" rel="external">https://developer.android.com/training/permissions/index.html</a></li>
-<li>对如何评估对应用程序的影响,看<br>  <a href="https://developer.android.com/training/permissions/best-practices.html#testing" target="_blank" rel="external">https://developer.android.com/training/permissions/best-practices.html#testing</a></li>
+		<h2 id="Runtime-Permissions"><a href="#Runtime-Permissions" class="headerlink" title="Runtime Permissions"></a>Runtime Permissions</h2><ul>
+<li><p>运行时权限</p>
+<p>  这个版本引入了一个新的权限模型,用户现在可以在运行时直接管理应用程序的权限。这个模型提供了改进的可见性和控制用户权限,同时简化安装和自动升级过程对于应用程序开发人员。用户可以授予或撤销权限单独安装的应用程序。</p>
+</li>
 </ul>
-<h2 id="Apache-HTTP-Client-Removal"><a href="#Apache-HTTP-Client-Removal" class="headerlink" title="Apache HTTP Client Removal"></a>Apache HTTP Client Removal</h2><blockquote>
-<p>移除了联网使用的HttpClient</p>
-</blockquote>
-<p>Android 6.0版本移除了Apache Http Client。如果你的应用程序使用此客户端和目标Android 2.3(API级别9)或更高,使用HttpURLConnection类。这个API是更有效的,因为它通过透明的压缩和响应缓存,减少网络使用和减少能耗。继续使用Apache HTTP api,您必须首先声明以下yourbuild.gradle文件中编译时依赖项:</p>
+<pre><code>在你的应用程序的目标Android 6.0(API级别23)或更高,确保在运行时检查和请求权限。来确定应用程序已经被授予权限,调用newcheckSelfPermission()方法。请求权限,调用新的requestPermissions()方法。即使你的应用程序并不是针对Android 6.0(API级别23),你应该测试你的应用在新的权限模型。
+
+
+* 有关支持新的权限模型在你的应用程序
+    &lt;https://developer.android.com/training/permissions/index.html&gt;
+* 对如何评估对应用程序的影响,看
+    &lt;https://developer.android.com/training/permissions/best-practices.html#testing&gt;
+</code></pre><h2 id="Apache-HTTP-Client-Removal"><a href="#Apache-HTTP-Client-Removal" class="headerlink" title="Apache HTTP Client Removal"></a>Apache HTTP Client Removal</h2><ul>
+<li><p>移除了联网使用的HttpClient</p>
+<p>  Android 6.0版本移除了Apache Http Client。如果你的应用程序使用此客户端和目标Android 2.3(API级别9)或更高,使用HttpURLConnection类。这个API是更有效的,因为它通过透明的压缩和响应缓存,减少网络使用和减少能耗。继续使用Apache HTTP api,您必须首先声明以下yourbuild.gradle文件中编译时依赖项:</p>
 <pre><code>android {
     useLibrary &apos;org.apache.http.legacy&apos;
 }
-</code></pre><h2 id="Notifications"><a href="#Notifications" class="headerlink" title="Notifications"></a>Notifications</h2><blockquote>
-<p>通知栏方法的删除&amp;修改</p>
-</blockquote>
-<p>这个版本删除<code>Notification.setLatestEventInfo()</code>方法。使用通知。构建器类来构建通知。反复更新通知,重用<code>Notification.Builder</code>实例。调用<code>build()</code>方法来获取更新通知实例。</p>
-<p><code>The adb shell dumpsys notification</code>命令不再打印出你的通知文本。<br>使用<code>adb shell dumpsys notification --noredact</code>而不是打印的文本通知对象</p>
-<h2 id="AudioManager-Change"><a href="#AudioManager-Change" class="headerlink" title="AudioManager Change"></a>AudioManager Change</h2><blockquote>
-<p>音频调整</p>
-</blockquote>
-<p>设置音量直接或通过AudioManager静音特定流类是不再支持。<code>setStreamSolo()</code>方法已经过时,你应该调用<code>requestAudioFocus()</code>方法。同样,<code>setStreamMute()</code>方法已经过时.已经使用<code>adjustStreamVolume()</code>方法进行取代.<br><code>adjustStreamVolume()</code>方法并传递价值ADJUST_MUTE或者ADJUST_UNMUTE的方向。</p>
-<h2 id="Text-Selection"><a href="#Text-Selection" class="headerlink" title="Text Selection"></a>Text Selection</h2><blockquote>
-<p>文本内容编辑修改</p>
-</blockquote>
-<p>当用户选择文本在你的应用程序,现在您可以显示文本选择 比如 <code>Cut</code>,<code>Copy</code>和<code>Parse</code>在<code>Floating ToolBar</code>。用户交互实现类似于上下文操作栏,使所述上下文动作模式为个人观点。</p>
-<blockquote>
-<p>实现浮动工具栏的文本选择,在你现有的应用程序做以下更改:</p>
-</blockquote>
-<ol>
-<li>在你的View或Activity对象,通过调用<code>startActionMode(回调)</code>或者调用<code>startActionMode(回调,ActionMode.TYPE_FLOATING)</code>改变你的ActionMode调用。</li>
-<li>把你现有的ActionMode.CallBack,替换为使用继承<code>ActionMode.Callback2</code>。</li>
-<li>重写<code>onGetContentRect()</code>方法提供的坐标<code>Rect</code>对象(如文本选择矩形)的观点。</li>
-<li>如果矩形定位不再是有效的,只有一个元素刷新,调用<code>invalidateContentRect()</code>方法。</li>
-</ol>
-<p>如果您使用的是Android支持库版本22.2,请注意,<code>floating toolbars</code>不向后兼容和<code>appcompat</code>需要控制ActionMode默认对象。这可以防止浮动工具栏显示。使<code>ActionModesupport AppCompatActivity</code>,调用<code>getDelegate()</code>,然后调用<code>setHandleNativeActionModesEnabled()</code>返回的<code>AppCompatDelegate</code>对象和输入参数设置为false。这个调用返回控制ActionMode对象的框架。在设备运行Android 6.0(API级别23),允许框架支持ActionBar或浮动工具栏模式,在设备上运行Android 5.1(API级别22)或更低,只有ActionBar模式支持。</p>
-<h2 id="Android-Keystore-Changes"><a href="#Android-Keystore-Changes" class="headerlink" title="Android Keystore Changes"></a>Android Keystore Changes</h2><blockquote>
-<p>签名文件加了重复校验</p>
-</blockquote>
-<p>在这个版本,安卓不再支持DSA密钥库提供者。ECDSA仍支持。</p>
-<p>密钥不需要加密静止不再禁用安全锁定屏幕或重置时删除(例如,由用户或设备管理员)。密钥需要加密静止在这些事件将被删除</p>
-  
+</code></pre></li>
+</ul>
+<h2 id="Notifications"><a href="#Notifications" class="headerlink" title="Notifications"></a>Notifications</h2><ul>
+<li><p>通知栏方法的删除&amp;修改</p>
+<p>  这个版本删除<code>Notification.setLatestEventInfo()</code>方法。使用通知。构建器类来构建通知。反复更新通知,重用<code>Notification.Builder</code>实例。调用<code>build()</code>方法来获取更新通知实例。</p>
+</li>
+</ul>
+<pre><code>`The adb shell dumpsys notification `命令不再打印出你的通知文本。
+使用`adb shell dumpsys notification --noredact`而不是打印的文本通知对象
+</code></pre><h2 id="AudioManager-Change"><a href="#AudioManager-Change" class="headerlink" title="AudioManager Change"></a>AudioManager Change</h2><ul>
+<li><p>音频调整</p>
+<p>  设置音量直接或通过AudioManager静音特定流类是不再支持。<code>setStreamSolo()</code>方法已经过时,你应该调用<code>requestAudioFocus()</code>方法。同样,<code>setStreamMute()</code>方法已经过时.已经使用<code>adjustStreamVolume()</code>方法进行取代.<br>  <code>adjustStreamVolume()</code>方法并传递价值ADJUST_MUTE或者ADJUST_UNMUTE的方向。</p>
+</li>
+</ul>
+<h2 id="Text-Selection"><a href="#Text-Selection" class="headerlink" title="Text Selection"></a>Text Selection</h2><ul>
+<li><p>文本内容编辑修改</p>
+<p>  当用户选择文本在你的应用程序,现在您可以显示文本选择 比如 <code>Cut</code>,<code>Copy</code>和<code>Parse</code>在<code>Floating ToolBar</code>。用户交互实现类似于上下文操作栏,使所述上下文动作模式为个人观点。</p>
+</li>
+</ul>
+<pre><code>- 实现浮动工具栏的文本选择,在你现有的应用程序做以下更改:
+
+1. 在你的View或Activity对象,通过调用`startActionMode(回调)`或者调用`startActionMode(回调,ActionMode.TYPE_FLOATING)`改变你的ActionMode调用。
+2. 把你现有的ActionMode.CallBack,替换为使用继承`ActionMode.Callback2`。
+3. 重写`onGetContentRect()`方法提供的坐标`Rect`对象(如文本选择矩形)的观点。
+4. 如果矩形定位不再是有效的,只有一个元素刷新,调用`invalidateContentRect()`方法。
+
+如果您使用的是Android支持库版本22.2,请注意,`floating toolbars `不向后兼容和`appcompat`需要控制ActionMode默认对象。这可以防止浮动工具栏显示。使`ActionModesupport AppCompatActivity`,调用`getDelegate()`,然后调用`setHandleNativeActionModesEnabled()`返回的`AppCompatDelegate`对象和输入参数设置为false。这个调用返回控制ActionMode对象的框架。在设备运行Android 6.0(API级别23),允许框架支持ActionBar或浮动工具栏模式,在设备上运行Android 5.1(API级别22)或更低,只有ActionBar模式支持。
+</code></pre><h2 id="Android-Keystore-Changes"><a href="#Android-Keystore-Changes" class="headerlink" title="Android Keystore Changes"></a>Android Keystore Changes</h2><ul>
+<li><p>签名文件加了重复校验</p>
+<p>  在这个版本,安卓不再支持DSA密钥库提供者。ECDSA仍支持。</p>
+</li>
+</ul>
+<pre><code>密钥不需要加密静止不再禁用安全锁定屏幕或重置时删除(例如,由用户或设备管理员)。密钥需要加密静止在这些事件将被删除
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -190,22 +198,22 @@
 </section>
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
+  <strong class="toc-title">Contents</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Runtime-Permissions"><span class="toc-number">1.</span> <span class="toc-text">Runtime Permissions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apache-HTTP-Client-Removal"><span class="toc-number">2.</span> <span class="toc-text">Apache HTTP Client Removal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notifications"><span class="toc-number">3.</span> <span class="toc-text">Notifications</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AudioManager-Change"><span class="toc-number">4.</span> <span class="toc-text">AudioManager Change</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Text-Selection"><span class="toc-number">5.</span> <span class="toc-text">Text Selection</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-Keystore-Changes"><span class="toc-number">6.</span> <span class="toc-text">Android Keystore Changes</span></a></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 
   
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
 			<li><a href="/tags/教程/" title="教程">教程<sup>1</sup></a></li>
@@ -217,7 +225,7 @@
 
 
   <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS 订阅</a>
+	<a href="null" target="_blank" title="rss">RSS</a>
 </div>
 
 </aside>
