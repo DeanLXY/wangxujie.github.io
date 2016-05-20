@@ -84,19 +84,15 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/05/11/hello-world/index.html">
+<meta name="description" content="虽然还没想好写点什么，但是总觉得这里放句话比较和谐。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="王徐杰的博客">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="王徐杰的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-05-11T15:14:16.684Z">
+<meta property="og:description" content="虽然还没想好写点什么，但是总觉得这里放句话比较和谐。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="王徐杰的博客">
+<meta name="twitter:description" content="虽然还没想好写点什么，但是总觉得这里放句话比较和谐。">
 
 
 
@@ -114,7 +110,7 @@ Quick">
   };
 </script>
 
-  <title> Hello World | 王徐杰的博客 </title>
+  <title> 王徐杰的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -135,7 +131,9 @@ Quick">
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -232,9 +230,9 @@ Quick">
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
   
@@ -254,7 +252,10 @@ Quick">
             
             
               
-                Hello World
+                
+                <a class="post-title-link" href="/2016/05/11/hexo-github建站/" itemprop="url">
+                  hexo+github建站
+                </a>
               
             
           </h1>
@@ -266,7 +267,7 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-11T23:14:16+08:00" content="2016-05-11">
+            <time itemprop="dateCreated" datetime="2016-05-11T23:48:55+08:00" content="2016-05-11">
               2016-05-11
             </time>
           </span>
@@ -277,8 +278,8 @@ Quick">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/11/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/11/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/05/11/hexo-github建站/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/11/hexo-github建站/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -301,29 +302,91 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        
+          
+            <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li><code>初步准备</code><br> 安装git  下载地址：<a href="http://msysgit.github.io/" target="_blank" rel="external">git下载</a><br> 由于熟悉了linux开发环境,在windows系统中安装了完整版<a href="http://pan.baidu.com/s/1i5DASvz" target="_blank" rel="external">cmder</a>(内置git)</li>
+<li><code>github上创建账号</code>    <ul>
+<li><a href="https://github.com/" target="_blank" rel="external">github</a>注册账号  </li>
+<li>建立repository     <blockquote>
+<p><code>建立仓库名必须是XXX.github.io</code>可以参考<code>wangxujie.github.io</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="使用hexo"><a href="#使用hexo" class="headerlink" title="使用hexo"></a>使用hexo</h2><p>1.<code>安装node.js</code>  </p>
+<blockquote>
+<p>下载地址： <a href="http://nodejs.org/download/" target="_blank" rel="external">下载nodejs</a><br>安装之前先验证node和npm是否安装成功(由于新版的NodeJS已经集成了npm)，在cmd中输入<code>node -v</code>  <code>npm -v</code></p>
+</blockquote>
+<ol>
+<li><p><code>安装hexo</code><br> <code>npm install -g hexo</code>这里有warning可以不用管。<br><a href="1">安装hexo</a> </p>
+</li>
+<li><p><code>Hexo使用</code>  </p>
+</li>
+</ol>
+<blockquote>
+<p><code>新建一个文件夹，我在F盘建了D:/hexo</code><br>右击打开git bash (或者直接打开<code>cmder</code>)执行<br><code>hexo init</code><br> 文件夹自动生成建网站所需的文件。</p>
+<p><code>npm install</code><br>会在文件夹下安装<code>node_modules</code>本地测试</p>
+<p><code>hexo server</code><br>然后就可以<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 中打开了<br><strong>记得关server是ctrl+c</strong></p>
+</blockquote>
+<h2 id="创建自己的新博客"><a href="#创建自己的新博客" class="headerlink" title="创建自己的新博客"></a>创建自己的新博客</h2><ol>
+<li>在cd到D:/hexo，<ol>
+<li>创建博客<br>  <code>hexo new &quot;Hello World&quot;</code></li>
+<li>生成建站资源<br> <code>hexo g</code>  </li>
+<li>发布到博客<br> <code>hexo d</code></li>
+<li>发布之前可以先在本地发布测试<br> <code>hexo s</code><blockquote>
+<p>看看<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 中新发布的blog</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><blockquote>
+<p>在D:\hexo\source_posts中有md文件 </p>
+<blockquote>
+<p>可以使用markdown来写博文 </p>
+<blockquote>
+<p>自行下载<a href="http://pan.baidu.com/s/1nuHWmIt" target="_blank" rel="external">markdown</a>语法的编辑器。（图片外链可以选择图床）</p>
+<blockquote>
+<p>在win10系统需要安装<a href="http://pan.baidu.com/s/1nvo0pj7" target="_blank" rel="external">markdown编译环境</a></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><ol>
+<li><p>修改_config.yml配置文件<br> 注意可以放到C++等的一些IDE里修改，我用了C-Free, 不要用文本文件修改 = =。每个：后面需要有一个空格否则会发生错误。 </p>
+</li>
+<li><p>修改_config.yml最后配置信息  </p>
+<pre><code>deploy:  
+   type: git  
+   repository: ssh://github.com/wangxujie/wangxujie.github.io.git
+   branch: master
+</code></pre></li>
+<li><p>deploy的type改成git，然后运行下  </p>
+<p> <code>npm install hexo-deployer-git --save</code><br>再</p>
+<pre><code>hexo g
+hexo d
+</code></pre></li>
+</ol>
+<p><strong>有些人将Type改为 github。可能没问题，但我出现了下面的问题Deployer not found: github。</strong></p>
+<h2 id="部署成功"><a href="#部署成功" class="headerlink" title="部署成功"></a>部署成功</h2><p>可以去你的xxx.github.io看看了~</p>
+<h2 id="主题下载"><a href="#主题下载" class="headerlink" title="主题下载"></a>主题下载</h2><p>这里注意下你执行命令的文件夹，首先需要在cd themes 中执行clone<br>更多主题 <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>md文件发布问题<br>在md文件中写中文，发布后会出现乱码的情况，另存为时改为“UTF-8”即可。</p>
+<h2 id="优化Hexo"><a href="#优化Hexo" class="headerlink" title="优化Hexo"></a>优化Hexo</h2><h3 id="添加“Fork-me-on-Github”-ribbon"><a href="#添加“Fork-me-on-Github”-ribbon" class="headerlink" title="添加“Fork me on Github” ribbon"></a>添加“Fork me on Github” ribbon</h3><p>给blog主页添加一个“Fork me on Github”的绶带（ribbon，比如选择了红色的ribbon，将相应代码复制到Hexo正在使用的theme下layout.ejs中</p>
+<p>样式选择 <a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="external">https://github.com/blog/273-github-ribbons</a></p>
+<p>粘贴到 themes\当前使用主题\layout\layout.ejs中，放置在 最后，标签<code>&lt;/body&gt;</code>之前即可。</p>
 
-      
-    </div>
-
-    <div>
-      
+          
         
       
     </div>
 
     <div>
       
-        
+    </div>
 
+    <div>
       
     </div>
 
@@ -331,32 +394,23 @@ Quick">
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/11/hexo-github建站/" rel="prev" title="hexo+github建站">
-                hexo+github建站 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
 
       
+      
+        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
+    
+  </section>
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -364,14 +418,6 @@ Quick">
 
 
           
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2016/05/11/hello-world/"
-           data-title="Hello World" data-url="http://yoursite.com/2016/05/11/hello-world/">
-      </div>
-    
-  </div>
-
 
         </div>
         
@@ -391,17 +437,8 @@ Quick">
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/author.jpg"
@@ -473,17 +510,6 @@ Quick">
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -587,10 +613,6 @@ Quick">
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
 
   
 
