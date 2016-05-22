@@ -121,7 +121,7 @@ FloatingActionButton
 <meta property="og:image" content="https://github.com/wangxujie/ScreenShots/blob/master/screens/appbarlayout1.gif?raw=true">
 <meta property="og:image" content="https://github.com/wangxujie/ScreenShots/blob/master/screens/appbarlayout2.gif?raw=true">
 <meta property="og:image" content="https://github.com/wangxujie/ScreenShots/blob/master/screens/appbarlayout3.gif?raw=true">
-<meta property="og:updated_time" content="2016-05-22T05:07:15.850Z">
+<meta property="og:updated_time" content="2016-05-22T05:11:38.454Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AppBarLayout+NavigationView+CoordinatorLayout+Toolbar">
 <meta name="twitter:description" content="添加依赖库dependencies {
@@ -429,23 +429,18 @@ setSupportActionBar(toolbar);
     }`
 </code></pre></li>
 <li><p>响应ToolBar上的菜单</p>
-<ol>
-<li><p>方式1:</p>
 <pre><code>toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
    @Override
    public boolean onMenuItemClick(MenuItem item) {
        return false;
    }
-   });`
-</code></pre></li>
-<li><p>方式2:</p>
+ });`
+</code></pre><p> &amp;</p>
 <pre><code>@Override
   public boolean onOptionsItemSelected(MenuItem item) {
       return super.onOptionsItemSelected(item);
   }
 </code></pre></li>
-</ol>
-</li>
 </ol>
 </li>
 </ul>
@@ -466,16 +461,9 @@ setSupportActionBar(toolbar);
 </li>
 </ul>
 <ul>
-<li><p><code>app:layout_scrollFlags</code>的几个属性值及其意义</p>
-<ul>
-<li><code>scroll</code> </li>
+<li><code>app:layout_scrollFlags</code>的几个属性值及其意义</li>
 </ul>
-</li>
-</ul>
-<pre><code>- `enterAlways` 
-
-
-- `enterAlwaysCollapsed` 
+<pre><code>- `enterAlwaysCollapsed` 
     &gt; 跟enterAlways类似, 但是最大只会滑出折叠后的大小.要配合`android:minHeight=&quot;50dp&quot;`属性使用.最小高度即为折叠后的高度 (配置方式:`&quot;scroll|enterAlways|enterAlwaysCollapsed&quot;`)
 
 - `exitUntilCollapsed` 
